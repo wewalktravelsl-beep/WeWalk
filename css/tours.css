@@ -1,0 +1,31 @@
+html { scroll-behavior: smooth; }
+    body { font-family:'Inter',sans-serif; }
+    details > summary { list-style:none; cursor:pointer; }
+    details > summary::-webkit-details-marker { display:none; }
+    details[open] .chev { transform: rotate(180deg); }
+    .chev { transition: transform .2s; }
+
+    .timeline { position: relative; padding-left: 26px; }
+    .timeline::before { content:''; position:absolute; left:9px; top:6px; bottom:6px; width:2px; background: repeating-linear-gradient(to bottom, #2F5D3A 0 6px, transparent 6px 12px); }
+    .timeline-item { position: relative; margin-bottom: 16px; }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot { position:absolute; left:-26px; top:2px; width:20px; height:20px; border-radius:50%; background:#2F5D3A; color:#FAF7F2; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; border:2px solid #FAF7F2; box-shadow:0 0 0 2px #2F5D3A; }
+    .timeline-title { font-weight:700; color:#2F5D3A; font-size:14px; }
+    .timeline-meta { font-size:12px; color:#666; margin-top:2px; }
+    .timeline-note { font-size:13px; color:#2B2B2B; margin-top:6px; line-height:1.5; }
+
+    .map-frame { position: relative; width: 100%; aspect-ratio: 1000 / 1400; background: #aadaff; border-radius: 16px; overflow: hidden; }
+    .map-frame img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,.15)); }
+    .map-frame svg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+    .city-dot { cursor:pointer; transition: r .2s, fill .2s; pointer-events:auto; }
+    .city-dot:hover { stroke:#E8B85C; stroke-width:3px; }
+    .city-dot.active { fill:#c00 !important; }
+    .route-line { stroke:#c00; stroke-width:3px; fill:none; stroke-linecap:round; stroke-dasharray:6 6; pointer-events:none; animation: dash 20s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset:-100; } }
+    .city-label { font-size:11px; fill:#1A1A1A; font-weight:800; pointer-events:none; text-shadow:2px 2px 0 #fff,-2px -2px 0 #fff,2px -2px 0 #fff,-2px 2px 0 #fff; }
+
+    #calibPanel { position: fixed; bottom: 12px; right: 12px; z-index: 9999; background: #111; color: #0f0; font: 12px/1.5 monospace; padding: 12px 14px; border-radius: 8px; max-width: 340px; box-shadow: 0 0 0 2px #0f0, 0 10px 30px rgba(0,0,0,.4); }
+    #calibPanel h4 { color:#0f0; margin:0 0 6px; font-weight:700; }
+    #calibPanel pre { white-space: pre-wrap; margin:0; max-height: 260px; overflow:auto; }
+    #calibPanel .hint { color:#888; margin-top:6px; font-size:11px; }
+    .calibrating .map-frame { cursor: crosshair; }

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Packages — WeWalk Travels</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="js/tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="css/tours.css">
+</head>
+
+<body class="bg-cream text-ink font-body">
+
+  <!-- NAVBAR -->
+  <header class="bg-forest text-cream sticky top-0 z-30 shadow-md">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center shrink-0">
+        <img src="logo-wewalk.jpeg" alt="WeWalk Logo" class="h-12 w-12 rounded-full object-cover border-2 border-cream/20 shadow-md hover:scale-105 transition-transform">
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-amber transition">Home</a></li>
+        <li><a href="tours.html" class="text-amber">Tours</a></li>
+        <li><a href="destinations.html" class="hover:text-amber transition">Destinations</a></li>
+        <li><a href="#custom" class="hover:text-amber transition">Plan Your Trip</a></li>
+        <li><a href="index.html#about" class="hover:text-amber transition">About</a></li>
+        <li><a href="index.html#contact" class="hover:text-amber transition">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/94716528873" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-amber text-forest font-semibold text-sm px-5 py-2.5 rounded-full hover:bg-yellow-400 transition">Chat with us</a>
+      <button id="menuBtn" class="md:hidden" aria-label="Open menu"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden bg-forest/95 backdrop-blur px-6 py-4 border-t border-cream/10">
+      <ul class="flex flex-col gap-4 font-medium">
+        <li><a href="index.html" class="hover:text-amber">Home</a></li>
+        <li><a href="tours.html" class="text-amber">Tours</a></li>
+        <li><a href="destinations.html" class="hover:text-amber">Destinations</a></li>
+        <li><a href="#custom" class="hover:text-amber">Plan Your Trip</a></li>
+        <li><a href="index.html#about" class="hover:text-amber">About</a></li>
+        <li><a href="index.html#contact" class="hover:text-amber">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-forest text-cream py-16 px-6">
+    <img src="hero-tours.jpeg" class=" w-full h-full object-cover opacity-65" alt="Sri Lanka" />
+    <div class="max-w-6xl mx-auto">
+      <p class="text-amber font-semibold uppercase tracking-widest text-xs mb-3"><a href="index.html" class="hover:underline">Home</a> / Tours</p>
+      <h1 class="font-heading font-bold text-4xl md:text-5xl mb-3">Our Tour Packages</h1>
+      <p class="text-cream/80 max-w-2xl">Eight curated journeys across Sri Lanka — from a 4-day escape to a 16-day grand tour, including our famous Surf Tours.</p>
+    </div>
+  </section>
+
+  <!-- FREEBIES -->
+  <section class="bg-sand/60 py-6 px-6 border-b border-sand">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-center text-xs font-semibold uppercase tracking-widest text-forest/70 mb-4">Every package includes</p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
+        <span class="bg-white rounded-full px-4 py-2 shadow-sm">💧 Water bottle pack</span>
+        <span class="bg-white rounded-full px-4 py-2 shadow-sm">📶 Free Wi-Fi onboard</span>
+        <span class="bg-white rounded-full px-4 py-2 shadow-sm">🛣️ Expressway charges covered</span>
+        <span class="bg-white rounded-full px-4 py-2 shadow-sm">🅿️ Parking covered</span>
+        <span class="bg-white rounded-full px-4 py-2 shadow-sm">📟 Paging service</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOD TO KNOW -->
+  <section class="py-10 px-6 bg-cream">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm flex gap-4">
+        <div class="text-3xl">🗣️</div>
+        <div><h3 class="font-heading font-semibold text-lg text-forest mb-1">English-speaking guides</h3><p class="text-ink/70 text-sm leading-relaxed">All tours are led by fluent English-speaking guides.</p></div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm flex gap-4">
+        <div class="text-3xl">✈️</div>
+        <div><h3 class="font-heading font-semibold text-lg text-forest mb-1">Flight tickets &amp; hotels not included</h3><p class="text-ink/70 text-sm leading-relaxed">We don't book flights or hotels. Attraction entry tickets are payable on-site.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINK TO DESTINATIONS PAGE -->
+  <section class="py-10 px-6 bg-white">
+    <div class="max-w-4xl mx-auto bg-sand/40 rounded-2xl p-8 text-center border border-sand flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-left">
+        <h3 class="font-heading font-bold text-2xl text-forest mb-2">Want to see where you're going?</h3>
+        <p class="text-ink/70 text-sm">Explore our full list of destinations, national parks, and famous activities.</p>
+      </div>
+      <a href="destinations.html" class="shrink-0 bg-forest text-cream font-semibold px-6 py-3 rounded-full hover:bg-forest/90 transition">View Destinations</a>
+    </div>
+  </section>
+
+  <!-- MIDI TOURS -->
+  <section class="py-16 px-6 bg-[#faf9f6]">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10"><p class="text-amber font-semibold uppercase tracking-widest text-xs mb-2">Midi Tours</p><h2 class="font-heading font-bold text-3xl md:text-4xl text-forest">Short &amp; sweet (4–8 days)</h2></div>
+
+      <!-- TOUR 1 -->
+      <article id="tour-1" class="bg-cream rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-kandy.jpeg" alt="Tour 1" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-forest text-cream text-xs font-semibold px-3 py-1 rounded-full">4 Days / 3 Nights</span>
+            <span class="bg-sand text-forest text-xs font-semibold px-3 py-1 rounded-full">700 km</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$380</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">Colombo · Kandy · Mirissa</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">A punchy intro to Sri Lanka — city energy, temple calm, and a soft landing on the south coast before your flight home.</p>
+          <details class="bg-white rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; on-the-road details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Airport → Colombo</div><div class="timeline-meta">Day 1 · City tour</div><div class="timeline-note">Gangaramaya Temple, Pettah markets, sunset at Galle Face Green.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2</span><div class="timeline-title">Colombo → Kandy</div><div class="timeline-meta">Day 2 · Hill capital</div><div class="timeline-note">Temple of the Sacred Tooth Relic, Kandy Lake walk, evening cultural dance show.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">3</span><div class="timeline-title">Kandy → Mirissa</div><div class="timeline-meta">Day 3 · Scenic descent to the coast</div><div class="timeline-note">Drive through tea hills, then down to the south coast. Beach time in Mirissa.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4</span><div class="timeline-title">Mirissa → Airport</div><div class="timeline-meta">Day 4 · Departure</div><div class="timeline-note">Whale watching (seasonal) or morning beach time, then transfer to the airport.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%204-day%20Colombo%2FKandy%2FMirissa%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%204-day%20Colombo%2FKandy%2FMirissa" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TOUR 2 -->
+      <article id="tour-2" class="bg-cream rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-beach.jpeg" alt="Tour 2" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-forest text-cream text-xs font-semibold px-3 py-1 rounded-full">5 Days / 4 Nights</span>
+            <span class="bg-sand text-forest text-xs font-semibold px-3 py-1 rounded-full">700 km</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$420</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">Colombo · Kandy · Nuwara Eliya · Mirissa</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">Add a touch of tea country to the classic loop — cool hill air, tea estates, and a slow finish by the sea.</p>
+          <details class="bg-white rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; on-the-road details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Airport → Colombo</div><div class="timeline-meta">Day 1 · City tour</div><div class="timeline-note">Gangaramaya Temple, Galle Face Green, Pettah markets.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2</span><div class="timeline-title">Colombo → Kandy</div><div class="timeline-meta">Day 2 · Hill capital</div><div class="timeline-note">Temple of the Tooth, Kandy Lake, cultural show.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">3</span><div class="timeline-title">Kandy → Nuwara Eliya</div><div class="timeline-meta">Day 3 · Into tea country</div><div class="timeline-note">Winding climb through tea estates, factory visit and tasting. Gregory Lake by evening.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4</span><div class="timeline-title">Nuwara Eliya → Mirissa</div><div class="timeline-meta">Day 4 · Down to the coast</div><div class="timeline-note">Scenic descent to the south coast, beach afternoon in Mirissa.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">5</span><div class="timeline-title">Mirissa → Airport</div><div class="timeline-meta">Day 5 · Departure</div><div class="timeline-note">Free morning, then airport transfer.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%205-day%20Hill%20Country%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%205-day%20Hill%20Country" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TOUR 3 -->
+      <article id="tour-3" class="bg-cream rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-sigiriya.jpeg" alt="Tour 3" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-forest text-cream text-xs font-semibold px-3 py-1 rounded-full">7 Days / 6 Nights</span>
+            <span class="bg-sand text-forest text-xs font-semibold px-3 py-1 rounded-full">800 km</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$580</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">Sigiriya · Kandy · Ella · South Coast</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">The full "greatest hits" week — rock fortress, temple, tea country, and the beach to finish.</p>
+          <details class="bg-white rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; on-the-road details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Airport → Sigiriya (via Dambulla)</div><div class="timeline-meta">Day 1</div><div class="timeline-note">Dambulla Cave Temple &amp; Spice Garden en route, evening arrival in Sigiriya.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2</span><div class="timeline-title">Sigiriya → Kandy</div><div class="timeline-meta">Day 2 · Elephant Orphanage Stop</div><div class="timeline-note">Morning climb of Sigiriya Rock, then visit the <strong>Pinnawala Elephant Orphanage</strong> before heading to Kandy.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">3</span><div class="timeline-title">Kandy → Nuwara Eliya</div><div class="timeline-meta">Day 3</div><div class="timeline-note">Tea factory stop, Gregory Lake, cool hill air.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4</span><div class="timeline-title">Nuwara Eliya → Ella <span class="text-amber">(train ride)</span></div><div class="timeline-meta">Day 4</div><div class="timeline-note">Nanu Oya → Ella train through tea estates, waterfalls and villages.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">5</span><div class="timeline-title">Ella → South Coast</div><div class="timeline-meta">Day 5</div><div class="timeline-note">Nine Arches Bridge, Little Adam's Peak, then descend to Mirissa/Galle.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">6</span><div class="timeline-title">South Coast → Colombo</div><div class="timeline-meta">Day 6</div><div class="timeline-note">Galle Fort walk, coastal drive to Colombo for the city tour.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">7</span><div class="timeline-title">Colombo → Airport</div><div class="timeline-meta">Day 7</div><div class="timeline-note">Airport transfer.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%207-day%20Grand%20Loop%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%207-day%20Grand%20Loop" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SURF TOURS -->
+  <section class="py-16 px-6 bg-[#e0f2fe]">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10"><p class="text-blue-500 font-semibold uppercase tracking-widest text-xs mb-2">Surfing Specials</p><h2 class="font-heading font-bold text-3xl md:text-4xl text-forest">Ride the Waves</h2></div>
+
+      <!-- SEASONAL SURF -->
+      <article id="tour-surf" class="bg-white rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-surf1.jpeg" alt="Surfing Arugam Bay" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">8 Days / 7 Nights</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">Seasonal: July - Sept</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$550</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">East Coast Surf: Trinco &amp; Arugam Bay</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">Chase the perfect wave on Sri Lanka's famous east coast during peak season.</p>
+          <details class="bg-cream rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Airport → Trincomalee</div><div class="timeline-meta">Day 1</div><div class="timeline-note">Arrive and head straight to the east coast.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2-3</span><div class="timeline-title">Trincomalee</div><div class="timeline-meta">Day 2-3 · Surf &amp; Snorkel</div><div class="timeline-note">Surfing at local breaks, visit Koneswaram Temple, snorkelling at Pigeon Island.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4-7</span><div class="timeline-title">Arugam Bay</div><div class="timeline-meta">Day 4-7 · The Surf Capital</div><div class="timeline-note">World-famous surf points (Main Point, Whiskey Point). Relaxed beach vibes, lagoon safaris.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">8</span><div class="timeline-title">Arugam Bay → Airport</div><div class="timeline-meta">Day 8</div><div class="timeline-note">Transfer back to Colombo for departure.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%20Seasonal%20East%20Coast%20Surf%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%20Seasonal%20East%20Coast%20Surf" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SOUTH COAST SURF -->
+      <article class="bg-white rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-surf2.jpeg" alt="Surfing Weligama" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">7 Days / 6 Nights</span>
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">Year-Round</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$550</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">South Coast Surf: Weligama &amp; Mirissa</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">Perfect for beginners and intermediate surfers. Learn to surf in the warm waters of the south.</p>
+          <details class="bg-cream rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Airport → Weligama</div><div class="timeline-meta">Day 1</div><div class="timeline-note">Take the expressway straight down to the south coast.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2-4</span><div class="timeline-title">Weligama Surfing</div><div class="timeline-meta">Day 2-4 · Learn to Surf</div><div class="timeline-note">Weligama Bay is famous for its gentle waves, perfect for beginners. Surf lessons and board rentals.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">5-6</span><div class="timeline-title">Mirissa</div><div class="timeline-meta">Day 5-6 · Whale Watching &amp; Beaches</div><div class="timeline-note">Move to Mirissa. Optional morning whale watching tour, surfing at nearby breaks, beach parties.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">7</span><div class="timeline-title">Mirissa → Airport</div><div class="timeline-meta">Day 7</div><div class="timeline-note">Transfer to the airport via the expressway.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%20South%20Coast%20Surf%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%20South%20Coast%20Surf" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- LONG TOURS -->
+  <section class="py-16 px-6 bg-sand/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10"><p class="text-amber font-semibold uppercase tracking-widest text-xs mb-2">Long Tours</p><h2 class="font-heading font-bold text-3xl md:text-4xl text-forest">Slow &amp; deep (12–16 days)</h2></div>
+
+      <!-- TOUR 4 -->
+      <article id="tour-4" class="bg-cream rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-safari.jpeg" alt="Tour 4" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-forest text-cream text-xs font-semibold px-3 py-1 rounded-full">12 Days / 11 Nights</span>
+            <span class="bg-sand text-forest text-xs font-semibold px-3 py-1 rounded-full">1,100 km</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$900</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">Grand Sri Lanka (12-day)</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">A relaxed two-week route with two-night stays at the highlights, so you actually get to breathe in each place.</p>
+          <details class="bg-white rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; on-the-road details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Colombo</div><div class="timeline-meta">Day 1</div><div class="timeline-note">Arrival &amp; city tour — Gangaramaya, Galle Face Green.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2–3</span><div class="timeline-title">Sigiriya · 2 nights</div><div class="timeline-meta">Day 2–3</div><div class="timeline-note">Sigiriya Rock, Dambulla Cave Temple, village tour.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4–5</span><div class="timeline-title">Kandy · 2 nights</div><div class="timeline-meta">Day 4–5 · Elephant Orphanage</div><div class="timeline-note">Morning visit to <strong>Pinnawala Elephant Orphanage</strong> en route to Kandy. Temple of the Tooth, cultural show.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">6</span><div class="timeline-title">Nuwara Eliya</div><div class="timeline-meta">Day 6</div><div class="timeline-note">Tea estate, Gregory Lake.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">7–8</span><div class="timeline-title">Ella · 2 nights <span class="text-amber">(train)</span></div><div class="timeline-meta">Day 7–8</div><div class="timeline-note">Nanu Oya → Ella train, Nine Arches Bridge.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">9</span><div class="timeline-title">Yala</div><div class="timeline-meta">Day 9</div><div class="timeline-note">Safari jeep through Yala National Park.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">10–11</span><div class="timeline-title">Mirissa / Weligama · 2 nights</div><div class="timeline-meta">Day 10–11</div><div class="timeline-note">Surfing, whale watching, Galle Fort walk.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">12</span><div class="timeline-title">Colombo → Airport</div><div class="timeline-meta">Day 12</div><div class="timeline-note">Final city stop, then airport transfer.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%2012-day%20Grand%20Sri%20Lanka%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%2012-day%20Grand%20Sri%20Lanka" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TOUR 5 -->
+      <article id="tour-5" class="bg-cream rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-trinco.jpeg" alt="Tour 5" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-forest text-cream text-xs font-semibold px-3 py-1 rounded-full">14 Days / 13 Nights</span>
+            <span class="bg-sand text-forest text-xs font-semibold px-3 py-1 rounded-full">1,250 km</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$1,250</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">Island Explorer (14-day)</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">Ancient cities, east coast beaches, the cultural triangle, hill country and the south — the whole island.</p>
+          <details class="bg-white rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; on-the-road details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Colombo</div><div class="timeline-meta">Day 1</div><div class="timeline-note">Arrival, city tour, Galle Face sunset.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2–3</span><div class="timeline-title">Anuradhapura · 2 nights</div><div class="timeline-meta">Day 2–3</div><div class="timeline-note">Sacred city — stupas, Bo Tree, cycle tour.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4–5</span><div class="timeline-title">Trincomalee · 2 nights</div><div class="timeline-meta">Day 4–5</div><div class="timeline-note">East coast beaches, Koneswaram Temple, snorkelling.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">6–8</span><div class="timeline-title">Dambulla · Sigiriya · Habarana · 3 nights</div><div class="timeline-meta">Day 6–8</div><div class="timeline-note">Cave temple, Sigiriya climb, village safari.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">9–10</span><div class="timeline-title">Kandy · 2 nights</div><div class="timeline-meta">Day 9–10 · Elephant Orphanage</div><div class="timeline-note">Visit <strong>Pinnawala Elephant Orphanage</strong> en route from Sigiriya. Temple of the Tooth, cultural show.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">11–12</span><div class="timeline-title">Ella · 2 nights <span class="text-amber">(train)</span></div><div class="timeline-meta">Day 11–12</div><div class="timeline-note">Nanu Oya → Ella train, Nine Arches Bridge.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">13</span><div class="timeline-title">Yala → Mirissa / Galle</div><div class="timeline-meta">Day 13</div><div class="timeline-note">Yala safari, then coastal drive.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">14</span><div class="timeline-title">Galle → Colombo</div><div class="timeline-meta">Day 14</div><div class="timeline-note">Coastal drive, final city stop, airport transfer.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%2014-day%20Island%20Explorer%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%2014-day%20Island%20Explorer" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TOUR 6 -->
+      <article id="tour-6" class="bg-cream rounded-2xl shadow-sm mb-8 overflow-hidden grid md:grid-cols-2">
+        <img src="tour-ella.jpeg" alt="Tour 6" class="w-full h-full object-cover" />
+        <div class="p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-forest text-cream text-xs font-semibold px-3 py-1 rounded-full">16 Days / 15 Nights</span>
+            <span class="bg-sand text-forest text-xs font-semibold px-3 py-1 rounded-full">1,300 km</span>
+            <span class="bg-amber text-forest text-xs font-bold px-3 py-1 rounded-full">$1,450</span>
+          </div>
+          <h3 class="font-heading font-bold text-2xl text-forest mb-2">Grand Island (16-day)</h3>
+          <p class="text-ink/70 text-sm mb-4 leading-relaxed">Our flagship. Three weeks of Sri Lanka at a slow, generous pace — extra nights in Ella and Galle so nothing feels rushed.</p>
+          <details class="bg-white rounded-xl p-4 mb-4">
+            <summary class="flex items-center justify-between font-semibold text-forest">Route &amp; on-the-road details <svg class="chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="mt-4"><div class="timeline">
+              <div class="timeline-item"><span class="timeline-dot">1</span><div class="timeline-title">Colombo</div><div class="timeline-meta">Day 1</div><div class="timeline-note">Arrival, city tour.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">2–3</span><div class="timeline-title">Anuradhapura · 2 nights</div><div class="timeline-meta">Day 2–3</div><div class="timeline-note">Sacred city, stupas, Bo Tree.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">4–5</span><div class="timeline-title">Trincomalee · 2 nights</div><div class="timeline-meta">Day 4–5</div><div class="timeline-note">East coast beaches, Koneswaram Temple.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">6–8</span><div class="timeline-title">Dambulla · Sigiriya · Habarana · 3 nights</div><div class="timeline-meta">Day 6–8</div><div class="timeline-note">Cave temple, Sigiriya climb, village safari.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">9–10</span><div class="timeline-title">Kandy · 2 nights</div><div class="timeline-meta">Day 9–10 · Elephant Orphanage</div><div class="timeline-note">Visit <strong>Pinnawala Elephant Orphanage</strong>. Temple of the Tooth, cultural show.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">11–13</span><div class="timeline-title">Ella · 3 nights <span class="text-amber">(train)</span></div><div class="timeline-meta">Day 11–13</div><div class="timeline-note">Train ride, Nine Arches, hikes.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">14</span><div class="timeline-title">Yala</div><div class="timeline-meta">Day 14</div><div class="timeline-note">Safari through Yala National Park.</div></div>
+              <div class="timeline-item"><span class="timeline-dot">15–16</span><div class="timeline-title">Galle · 2 nights → Colombo</div><div class="timeline-meta">Day 15–16</div><div class="timeline-note">Fort walk, beach day, coastal drive.</div></div>
+            </div></div>
+          </details>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/94716528873?text=Hi%20WeWalk!%20I'm%20interested%20in%20the%2016-day%20Grand%20Island%20package." target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Book on WhatsApp</a>
+            <a href="mailto:wewalktravelsl@gmail.com?subject=Tour%20Inquiry%20-%2016-day%20Grand%20Island" class="flex-1 text-center border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Email us</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CUSTOM TRIP BUILDER -->
+  <section id="custom" class="py-16 px-6 bg-sand/40">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-amber font-semibold uppercase tracking-widest text-xs mb-2">Custom Tour</p>
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-forest mb-3">Build Your Own Trip</h2>
+        <p class="text-ink/70 max-w-xl mx-auto">Pick the cities you want, see the route and distances, then send it straight to us for a quote.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-6">
+        <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm p-5">
+          <h3 class="font-heading font-semibold text-forest mb-1">1. Pick your cities</h3>
+          <p class="text-xs text-ink/60 mb-4">Click a city to add it. Order matters.</p>
+          <div id="cityList" class="space-y-2"></div>
+
+          <div class="mt-6 p-4 bg-cream rounded-xl">
+            <h4 class="font-semibold text-forest text-sm mb-2">Your journey</h4>
+            <div id="selectedList" class="text-sm text-ink/60 italic">No destinations yet.</div>
+            <button onclick="clearRoute()" class="mt-3 w-full bg-red-600 hover:bg-red-700 text-white text-sm font-semibold py-2 rounded-lg transition">Clear route</button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-6">
+          <div class="bg-white rounded-2xl shadow-sm p-4">
+            <h3 class="font-heading font-semibold text-forest mb-3">2. See your route</h3>
+            <div class="map-frame" id="mapFrame">
+              <img src="map.jpg" alt="Sri Lanka map" />
+              <svg viewBox="0 0 1000 1400" preserveAspectRatio="xMidYMid meet" id="svgMap">
+                <!-- Permanent Airport Landmark -->
+                <g id="airport-landmark">
+                  <circle cx="210" cy="870" r="8" fill="#E8B85C" stroke="#fff" stroke-width="2"/>
+                  <text x="210" y="850" text-anchor="middle" class="text-[12px] font-bold fill-[#2F5D3A]">✈️ Airport</text>
+                </g>
+                <g id="lines"></g>
+                <g id="dots"></g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-sm p-5">
+            <h3 class="font-heading font-semibold text-forest mb-3">3. Send it to us for a quote</h3>
+            <div class="grid sm:grid-cols-2 gap-3 mb-3">
+              <input id="qName" type="text" placeholder="Your name" class="border border-ink/15 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-forest/40" />
+              <input id="qContact" type="text" placeholder="Email or phone" class="border border-ink/15 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-forest/40" />
+              <input id="qDates" type="text" placeholder="Travel dates" class="border border-ink/15 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-forest/40" />
+              <input id="qPeople" type="number" min="1" placeholder="Travelers" class="border border-ink/15 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-forest/40" />
+            </div>
+            <textarea id="qNotes" rows="2" placeholder="Anything else?" class="w-full border border-ink/15 rounded-lg px-3 py-2 text-sm mb-4 focus:outline-none focus:ring-2 focus:ring-forest/40"></textarea>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <button onclick="sendWhatsApp()" class="flex-1 bg-[#25D366] text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition">Send via WhatsApp</button>
+              <button onclick="sendEmail()" class="flex-1 border-2 border-forest text-forest font-semibold px-5 py-3 rounded-full hover:bg-forest hover:text-cream transition">Send via Email</button>
+            </div>
+            <p id="sendMsg" class="text-xs text-forest mt-3 hidden">Opening your app…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-cream/70 py-8 px-6 text-center text-sm">
+    <p class="mb-2 font-heading font-semibold text-cream">WeWalk Travels</p>
+    <p>© 2025 WeWalk Travels. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="js/tours.js"></script>
+</body>
+</html>
